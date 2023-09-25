@@ -1,7 +1,7 @@
-import linkedinIcon from '../assets/linkedin.png';
-import githubIcon from '../assets/github.png';
-import whatsappIcon from '../assets/whatsapp.png';
-import instagramIcon from '../assets/instagram.png';
+import linkedinIcon from '../assets/linkedin.svg';
+import githubIcon from '../assets/github.svg';
+import whatsappIcon from '../assets/whatsapp.svg';
+import instagramIcon from '../assets/instagram.svg';
 
 export function SocialMediaAside() {
     return (
