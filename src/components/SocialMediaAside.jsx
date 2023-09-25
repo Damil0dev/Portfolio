@@ -5,7 +5,7 @@ import instagramIcon from '../assets/instagram.svg';
 
 export function SocialMediaAside() {
     return (
-        <aside className='absolute top-1/2 left-0 transform -translate-y-1/2'>
+        <aside>
             <ul className="flex flex-col gap-5">
                 <SocialNetwork imageUrl={linkedinIcon} alt="Damian's Linkedin" />
                 <SocialNetwork imageUrl={githubIcon} alt="Damian's github" /> 
