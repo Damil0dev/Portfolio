@@ -1,0 +1,35 @@
+What Makes A Good Web Developer Portfolio
+To have a good portfolio as a web developer you should try to include the following information:
+
+About Me
+Every portfolio should include a page or section that talks about who you are. Here you can include your professional description, the name of companies or projects you’ve worked and hobbies or passions. Try to use natural language without sounding too formal. Tech people like informal and fun stuff.
+
+Projects
+There’s no better way to show what you are capable of than naming your biggest achievements. These can be projects on previous jobs, side hustles, or a combination of both. Add here whatever you’ve done that serves as a way to show your skills as a web developer.
+
+Contact Page
+A portfolio is not a portfolio unless you have a contact page. It doesn’t have to be a contact form. It can be just sharing your email or adding links to your social networks. What’s important is that you provide an easy way for people to contact you.
+
+Technologies
+Make sure to add the technologies you’ve worked in or the ones you have experience in. Languages, frameworks, CMSs, management tools, etc. Anything that can help people identify if you are a good fit for their company or their projects.
+
+Link to Github
+If you have an active Github account (which you should do), make sure to add a link to it somewhere visible on your page. You know what Linus Torvalds said: “Talk is cheap, show me the code!” Make sure you have things on Github that showcase your skills with certain technologies. They are your best CV.
+
+Relevant Links
+Your portfolio as a web developer is more important than your CV. Take the chance to add anything that you think can be relevant for others to get to know your skills.
+
+Add links to youtube tutorials you’ve done, events where you’ve been a speaker, scientific papers where you’ve contributed, important pull requests on open-sourced projects, online interviews, podcasts where you’ve participated, etc. This is your exposition. Own it.
+
+Hobbies
+Don’t be afraid of adding a touch of personality to your portfolio. After all, we are all humans and we want to work with other human beings. If you have any hobbies feel free to share them. If you like photography, share your pictures. If you like soccer or basketball and you’ve won some competitions, add it too.
+
+Accomplishments
+If you’ve done anything that can be considered extraordinary, share it. Awards of any kind, popular repositories, side hustles that went viral or turned into small products or services, books you’ve written, your GitHub contributions, courses you’ve taken, etc.
+
+Blog
+If you can find the time to write a bit every month, this will enhance your portfolio quite a lot. Create posts about web development sharing your discoveries and struggles. The more you share the more they’ll see you as an expert on the topic and the better you’ll learn things.
+
+Social Networks
+Aside from Github, if you are active in any other social network like Twitter, Facebook, Instagram, Pinterest, or Youtube, feel free to share your links so they can get to know you better.
+
