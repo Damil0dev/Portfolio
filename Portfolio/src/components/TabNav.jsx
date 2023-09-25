@@ -1,6 +1,6 @@
 export function TabNav() {
     return (
-        <nav className="flex flex-row justify-around">
+        <nav className="flex flex-row justify-center">
             <ul className="flex flex-row gap-5">
                 <Tab title="Home" />
                 <Tab title="About me" />
