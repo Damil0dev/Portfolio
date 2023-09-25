@@ -1,8 +1,17 @@
 export default function Home() {
     return (
         <div>
-            <h1>Bienvenido a mi página principal</h1>
-            {/* Agrega aquí el contenido específico de tu página principal */}
+            <Welcome />
         </div>
     );
+}
+
+function Welcome() {
+    return (
+        <div>
+            <h1>Damian Ysla</h1>
+            <p>I'm a <h2>Front End Developer</h2></p>
+        </div>
+
+    )
 }

@@ -1,20 +1,22 @@
+import { Link } from "react-router-dom";
+
 export function TabNav() {
     return (
         <nav className="flex flex-row justify-center">
             <ul className="flex flex-row gap-5">
-                <Tab title="Home" />
-                <Tab title="About me" />
-                <Tab title="Projects" />
-                <Tab title="Contact" /> 
+                <Tab title="Home" path="/" />
+                <Tab title="About me" path="/about" />
+                <Tab title="Projects" path="/projects" />
+                <Tab title="Contact" path="/contact" /> 
             </ul>
         </nav>
     )
 }
 
-function Tab({ title }) {
+function Tab({ title, path }) {
     return (
         <li className="flex items-center justify-center text-lg font-bold hover:text-blue-800 hover:underline hover:underline-offset-2 transition-all" style={{ textDecorationThickness: '2px' }}>
-            <a href="" className="p-3">{title}</a>
+            <Link to={path} className="p-3">{title}</Link>
         </li>
     )
 }
