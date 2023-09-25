@@ -5,7 +5,7 @@ import instagramIcon from '../assets/instagram.svg';
 
 export function SocialMediaAside() {
     return (
-        <aside>
+        <aside className='absolute top-1/2 left-0 transform -translate-y-1/2'>
             <ul className="flex flex-col gap-5">
                 <SocialNetwork imageUrl={linkedinIcon} alt="Damian's Linkedin" />
                 <SocialNetwork imageUrl={githubIcon} alt="Damian's github" /> 
@@ -19,7 +19,7 @@ export function SocialMediaAside() {
 function SocialNetwork({imageUrl, alt}) {
     return (
         <li className='flex '>
-            <a href="" className='p-3 hover:scale-110 transition-transform'>
+            <a href="" className='p-5 hover:scale-110 transition-transform'>
                 <img src={imageUrl} alt={alt} height={32} width={32} />
             </a>
         </li>
