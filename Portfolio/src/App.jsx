@@ -1,3 +1,4 @@
+import { SocialMediaAside } from "./components/SocialMediaaside"
 import { TabNav } from "./components/TabNav"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
       <TabNav />
+      <SocialMediaAside />
     </>
   )
 }
