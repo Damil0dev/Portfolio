@@ -1,11 +1,13 @@
 export function TabNav() {
     return (
-        <div className="flex justify-around">
-            <Tab title="Home" />
-            <Tab title="About me" />
-            <Tab title="Projects" />
-            <Tab title="Contact" />
-        </div>
+        <nav className="flex flex-row justify-around">
+            <ul className="flex flex-row gap-5">
+                <Tab title="Home" />
+                <Tab title="About me" />
+                <Tab title="Projects" />
+                <Tab title="Contact" />
+            </ul>
+        </nav>
     )
 }
 
