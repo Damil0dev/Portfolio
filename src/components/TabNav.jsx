@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export function TabNav() {
     return (
         <nav className="flex flex-row justify-center">
             <ul className="flex flex-row gap-5">
-                <Tab title="Home" path="/" />
-                <Tab title="About me" path="/about" />
+                <Tab title="Home" path="/"/>
+                <Tab title="About" path="/about" />
                 <Tab title="Projects" path="/projects" />
                 <Tab title="Contact" path="/contact" /> 
             </ul>
@@ -14,8 +14,14 @@ export function TabNav() {
 }
 
 function Tab({ title, path }) {
+    const location = useLocation();
+    const isActive = path === location.pathname;
+
+    const activeClasses = "text-lg font-bold text-blue-800 border-blue-800 border-b-4";
+    const inactiveClasses = "text-lg font-bold hover:text-blue-800 hover:border-blue-800 hover:border-b-4";
+
     return (
-        <li className="flex items-center justify-center text-lg font-bold hover:text-blue-800 hover:underline hover:underline-offset-2 transition-all" style={{ textDecorationThickness: '2px' }}>
+        <li className={`flex items-center justify-center transition-all ${isActive ? activeClasses : inactiveClasses}`}>
             <Link to={path} className="p-3">{title}</Link>
         </li>
     )
