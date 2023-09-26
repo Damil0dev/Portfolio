@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { SocialMediaAside } from "./components/SocialMediaaside"
+import { SocialMediaAside } from "./components/SocialMediaAside"
 import { TabNav } from "./components/TabNav"
 
 // PAGES
@@ -13,13 +13,13 @@ import Skills from "./pages/Skills"
 
 function App() {
   return (
-    <>
+    <div className="w-full h-screen">
       <div className="absolute top-0 left-1/2  transform -translate-x-1/2">
         <TabNav />
       </div>
 
-      <div className='absolute top-1/2 left-0 transform -translate-y-1/2'>
-              <SocialMediaAside />
+      <div>
+        <SocialMediaAside />
       </div>
 
 
@@ -30,7 +30,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
