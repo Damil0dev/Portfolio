@@ -6,6 +6,7 @@ export function TabNav() {
             <ul className="flex flex-row gap-5">
                 <Tab title="Home" path="/"/>
                 <Tab title="About" path="/about" />
+                <Tab title="Skills" path="/skills" />
                 <Tab title="Projects" path="/projects" />
                 <Tab title="Contact" path="/contact" /> 
             </ul>
