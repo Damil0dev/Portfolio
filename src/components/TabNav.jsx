@@ -1,14 +1,27 @@
+import React, { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 
+import menuIcon from "../assets/menu.svg"
+
 export function TabNav() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    function handleClick() {
+        setIsOpen(!isOpen)
+    }
+
     return (
-        <nav className="flex flex-row justify-center">
-            <ul className="flex flex-row gap-5">
-                <Tab title="Home" path="/"/>
+        <nav className={` w-screen md:flex md:flex-row md:justify-center md:items-center ${isOpen ? "bg-slate-100 shadow-lg" : "bg-transparent"} md:bg-transparent md:shadow-none`}>
+            <div className={` md:self-start md:justify-self-start md:hidden`} onClick={handleClick}>
+                <img src={menuIcon} alt="menu button" height={70} width={70} />
+            </div>
+
+            <ul className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex md:flex-row md:gap-5`}>
+                <Tab title="Home" path="/" />
                 <Tab title="About" path="/about" />
                 <Tab title="Skills" path="/skills" />
                 <Tab title="Projects" path="/projects" />
-                <Tab title="Contact" path="/contact" /> 
+                <Tab title="Contact" path="/contact" />
             </ul>
         </nav>
     )
@@ -18,12 +31,41 @@ function Tab({ title, path }) {
     const location = useLocation();
     const isActive = path === location.pathname;
 
+    const activeClasses = "text-2xl md:text-lg font-bold text-blue-800 border-blue-800 border-b-4";
+    const inactiveClasses = "text-2xl md:text-lg font-bold hover:text-blue-800 hover:border-blue-800 hover:border-b-4";
+
+    return (
+        <li className={`flex items-center justify-center transition-all ${isActive ? activeClasses : inactiveClasses}`}>
+            <Link to={path} className="w-full md:w-fit p-3 text-center">{title}</Link>
+        </li>
+    )
+}
+
+export function TabNav_mobile() {
+
+    function handleClick() {
+        
+    }
+
+    return (
+        <nav>
+            <div className={` md:self-start md:justify-self-start md:hidden`} onClick={handleClick}>
+                <img src={menuIcon} alt="menu button" height={70} width={70} />
+            </div>
+        </nav>
+    )
+}
+
+function Tab_mobile({ title, path }) {
+    const location = useLocation();
+    const isActive = path === location.pathname;
+
     const activeClasses = "text-lg font-bold text-blue-800 border-blue-800 border-b-4";
     const inactiveClasses = "text-lg font-bold hover:text-blue-800 hover:border-blue-800 hover:border-b-4";
 
     return (
         <li className={`flex items-center justify-center transition-all ${isActive ? activeClasses : inactiveClasses}`}>
-            <Link to={path} className="p-3">{title}</Link>
+            <Link to={path} className="w-full p-3 text-center">{title}</Link>
         </li>
     )
 }

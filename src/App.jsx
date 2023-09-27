@@ -14,7 +14,7 @@ import Skills from "./pages/Skills"
 function App() {
   return (
     <div className="w-full h-screen">
-      <div className="absolute top-0 left-1/2  transform -translate-x-1/2">
+      <div className="fixed top-0 left-1/2  transform -translate-x-1/2">
         <TabNav />
       </div>
 
