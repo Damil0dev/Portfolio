@@ -1,7 +1,7 @@
 function NotFound() {
     return (
-        <div className="w-full h-screen flex flex-col md:flex-row justify-center items-center gap-5 px-4">
-            <div className="w-full md:w-5/6 h-4/5 md:h-full flex flex-col md:flex-row md:flex-wrap md:justify-center gap-5 overflow-auto md:overflow-hidden">
+        <div className="w-full h-screen flex flex-col md:flex-row justify-center items-center px-4">
+            <div className="w-full md:w-5/6 h-4/5 md:h-full flex flex-col md:flex-row md:flex-wrap md:justify-center md:items-center gap-5 md:gap-8 overflow-auto md:overflow-hidden">
                 <div className="w-full md:w-1/3">
                     <Form />
                 </div>
