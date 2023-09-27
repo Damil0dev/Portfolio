@@ -40,32 +40,3 @@ function Tab({ title, path }) {
         </li>
     )
 }
-
-export function TabNav_mobile() {
-
-    function handleClick() {
-        
-    }
-
-    return (
-        <nav>
-            <div className={` md:self-start md:justify-self-start md:hidden`} onClick={handleClick}>
-                <img src={menuIcon} alt="menu button" height={70} width={70} />
-            </div>
-        </nav>
-    )
-}
-
-function Tab_mobile({ title, path }) {
-    const location = useLocation();
-    const isActive = path === location.pathname;
-
-    const activeClasses = "text-lg font-bold text-blue-800 border-blue-800 border-b-4";
-    const inactiveClasses = "text-lg font-bold hover:text-blue-800 hover:border-blue-800 hover:border-b-4";
-
-    return (
-        <li className={`flex items-center justify-center transition-all ${isActive ? activeClasses : inactiveClasses}`}>
-            <Link to={path} className="w-full p-3 text-center">{title}</Link>
-        </li>
-    )
-}
