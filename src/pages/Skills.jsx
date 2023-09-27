@@ -9,8 +9,8 @@ import pwaIcon from "../assets/pwa.svg"
 
 function Skills() {
     return (
-        <div className="w-full h-screen flex flex-col justify-center items-center px-3">
-            <div className="w-full h-3/4 flex flex-row flex-wrap gap-5">
+        <div className="w-full h-screen flex justify-center items-center px-3">
+            <div className="w-full h-3/4 md:h-2/4 flex flex-row flex-wrap justify-center gap-5 md:gap-8">
                 <SkillBar icon={htmlIcon} alt="excellent level with html" percentaje="80%" firstBarHeight="h-1/6" secondBarHeight="h-5/6"/>
                 <SkillBar icon={cssIcon} alt="excellent level with css" percentaje="80%" firstBarHeight="h-1/6" secondBarHeight="h-5/6" />
                 <SkillBar icon={tailwindIcon} alt="excellent level with tailwind" percentaje="80%" firstBarHeight="h-1/6" secondBarHeight="h-5/6" />
