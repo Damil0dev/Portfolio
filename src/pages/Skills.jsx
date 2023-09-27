@@ -36,7 +36,7 @@ function SkillBar({ icon, alt, percentaje, firstBarHeight, secondBarHeight }) {
                 <div className={`${firstBarHeight} bg-blue-200 rounded-t-xl`}></div>
                 <div className={`${secondBarHeight} bg-blue-700 rounded-b-xl`}></div>
             </div>
-            <img src={icon} alt={alt} width={50} height={50}/>
+            <img src={icon} alt={alt} width={50} height={50} className="p-2"/>
         </div>
     )
 }
