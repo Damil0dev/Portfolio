@@ -18,7 +18,7 @@ export function SocialMediaAside() {
 
 function SocialNetwork({imageUrl, alt, link}) {
     return (
-        <li className='flex '>
+        <li className='flex select-none'>
             <a href={link} target='_blank' className='p-5 hover:scale-110 transition-transform' rel="noreferrer">
                 <img src={imageUrl} alt={alt} height={32} width={32} />
             </a>
