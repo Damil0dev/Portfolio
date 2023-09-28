@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
 
 import menuIcon from "../assets/menu.svg"
+import { ThemeButton } from "../components/ThemeButton";
 
 export function TabNav() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +26,11 @@ export function TabNav() {
 
     return (
         <nav ref={navRef} className={`w-screen md:flex md:flex-row md:justify-center md:items-center ${isOpen ? "bg-slate-100 shadow-lg" : "bg-transparent"} md:bg-transparent md:shadow-none`}>
-            <div className={`md:self-start md:justify-self-start md:hidden`} onClick={() => { setIsOpen(!isOpen) }}>
-                <img src={menuIcon} alt="menu button" height={70} width={70} />
+            <div className={`w-full md:w-fit flex flex-row md:fixed md:left-2 md:top-2  `} >
+                <img src={menuIcon} alt="menu button" height={70} width={70} onClick={() => { setIsOpen(!isOpen) }} className='md:hidden' />
+                <div className='ml-auto md:ml-0'>
+                    <ThemeButton />
+                </div>
             </div>
 
             <ul className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex md:flex-row md:gap-5`}>

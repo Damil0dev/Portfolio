@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { SocialMediaAside } from "./components/SocialMediaAside"
 import { TabNav } from "./components/TabNav"
-import { ThemeButton } from "./components/ThemeButton";
+
 
 // PAGES
 import Home from "./pages/Home";
@@ -14,9 +14,9 @@ import Skills from "./pages/Skills"
 function App() {
   return (
     <div className="w-full h-screen">
-      <div className="fixed top-0 left-1/2  transform -translate-x-1/2">
+      <div className="fixed top-0 left-1/2  transform -translate-x-1/2 flex flex-row items-center">
         <TabNav />
-        <ThemeButton />
+
       </div>
 
       <div>

@@ -19,8 +19,8 @@ export function ThemeButton() {
     }
 
     return (
-        <div className='cursor-pointer select-none' onClick={handleClick}>
-            <img src={isDark ? moonIcon : sunIcon} alt="button for change between dark and light mode" width={60} height={60} />
+        <div className=' md:self-end md:justify-self-end cursor-pointer select-none' onClick={handleClick}>
+            <img src={isDark ? moonIcon : sunIcon} alt="button for change between dark and light mode" width={70} height={70} />
         </div>
     );
 }
