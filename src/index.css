@@ -17,3 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Transparente */
+    tap-highlight-color: rgba(0, 0, 0, 0);         /* Transparente */
+}
