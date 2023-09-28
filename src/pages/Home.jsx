@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <div className="w-full h-screen flex justify-center items-center">
-            <div className="max-w-xl flex flex-col gap-5 px-5">
+            <div className="max-w-xl flex flex-col gap-5 px-5 dark:bg-black">
                 <Welcome />
             </div>
 
