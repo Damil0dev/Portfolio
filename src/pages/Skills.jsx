@@ -31,7 +31,7 @@ function Title() {
 function SkillBar({ icon, alt, percentaje, firstBarHeight, secondBarHeight }) {
     return (
         <div className="flex flex-col justify-center items-center select-none">
-            <p className="font-semibold text-center text-xl">{percentaje}</p>
+            <p className="font-semibold text-center text-xl dark:text-neutral-200">{percentaje}</p>
             <div className="h-3/4 w-2/4 flex flex-col justify-center rounded-xl">
                 <div className={`${firstBarHeight} bg-blue-200 rounded-t-xl`}></div>
                 <div className={`${secondBarHeight} bg-blue-700 rounded-b-xl`}></div>
