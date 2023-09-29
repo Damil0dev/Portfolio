@@ -28,7 +28,7 @@ export function TabNav({isDark, setIsDark}) {
     return (
         <nav ref={navRef} className={`w-screen md:flex md:flex-row md:justify-center md:items-center ${isOpen ? "bg-slate-100 dark:bg-neutral-700 shadow-lg" : "bg-transparent"} md:bg-transparent md:shadow-none`}>
             <div className={`w-full md:w-fit flex flex-row items-center md:fixed md:left-2 md:top-2 py-3 px-3  `} >
-                <div className='w-9 h-9 flex items-center justify-center'>
+                <div className='w-9 h-9 flex items-center justify-center md:hidden'>
                     <img src={isDark ? menuIcon_dark : menuIcon} alt="menu button" onClick={() => { setIsOpen(!isOpen) }} className='md:hidden' />
                 </div>
 
