@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import menuIcon from "../assets/menu.svg"
 import { ThemeButton } from "../components/ThemeButton";
 
-export function TabNav() {
+export function TabNav({isDark, setIsDark}) {
     const [isOpen, setIsOpen] = useState(false);
     const navRef = useRef(null);
 
@@ -29,7 +29,7 @@ export function TabNav() {
             <div className={`w-full md:w-fit flex flex-row md:fixed md:left-2 md:top-2  `} >
                 <img src={menuIcon} alt="menu button" height={70} width={70} onClick={() => { setIsOpen(!isOpen) }} className='md:hidden p-2' />
                 <div className='ml-auto md:ml-0'>
-                    <ThemeButton />
+                    <ThemeButton isDark={isDark} setIsDark={setIsDark} />
                 </div>
             </div>
 

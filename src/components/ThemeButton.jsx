@@ -3,11 +3,9 @@ import React, { useState } from 'react';
 import sunIcon from "../assets/sun.svg"
 import moonIcon from "../assets/moon.svg"
 
-export function ThemeButton() {
-    const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains("dark"));
-
+export function ThemeButton({ isDark, setIsDark }) {
     function handleClick() {
-        const htmlElement = document.documentElement;  // Esto asume que quieres cambiar la clase en el elemento <html>
+        const htmlElement = document.documentElement;
 
         if (isDark) {
             htmlElement.classList.remove("dark");
