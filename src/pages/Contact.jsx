@@ -15,7 +15,7 @@ function NotFound() {
 
 function Form() {
     return (
-        <form action="" className="w-full flex flex-col gap-5">
+        <form action="https://formspree.io/f/xzblkdga" className="w-full flex flex-col gap-5">
             <h2 className="text-3xl font-bold dark:text-neutral-200">Message me</h2>
             <div className="flex gap-3">
                 <input type="text" name="name" id="name" placeholder="Name" required className="w-1/2 py-2 px-4 rounded-lg text-white" />
