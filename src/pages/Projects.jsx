@@ -26,8 +26,8 @@ function Project({image, alt, title, description, typeOfProject, url}) {
             </div>
 
             <div className="px-2 py-3">
-                <h3 className="text-3xl text-blue-800 font-bold">{title} <span className="text-lg text-neutral-500 font-semibold">{typeOfProject}</span></h3>
-                <p className="text-xl font-semibold dark:text-neutral-200">{description}</p>
+                <h3 className="text-xl text-blue-800 font-bold">{title} <span className="text-sm text-neutral-500 font-semibold">{typeOfProject}</span></h3>
+                <p className="text-lg font-semibold dark:text-neutral-200">{description}</p>
             </div>
 
 
