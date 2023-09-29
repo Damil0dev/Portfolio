@@ -50,7 +50,8 @@ function Tab({ title, path }) {
     const isActive = path === location.pathname;
 
     const activeClasses = "text-2xl md:text-lg font-bold text-blue-800 border-blue-800 border-b-4";
-    const inactiveClasses = "text-2xl md:text-lg font-bold hover:text-blue-800 hover:border-blue-800 hover:border-b-4 dark:text-neutral-200";
+    const inactiveClasses = "text-2xl md:text-lg font-bold border-b-4 border-transparent hover:text-blue-800 hover:border-blue-800 dark:text-neutral-200";
+
 
     return (
         <li className={`flex items-center justify-center transition-all ${isActive ? activeClasses : inactiveClasses}`}>
