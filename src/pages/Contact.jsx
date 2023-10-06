@@ -42,10 +42,12 @@ function ContactInfo() {
 
 function Info({word, definition}) {
     return (
-        <dl>
-            <dt className="text-xl font-semibold dark:text-neutral-200">{word}</dt>
-            <dd className="text-lg text-gray-500 italic">{definition}</dd>
-        </dl>
-    )
+      <dl>
+        <dt className='text-xl font-semibold dark:text-neutral-200'>{word}</dt>
+        <dd className='text-lg text-neutral-500 dark:text-neutral-400 italic'>
+          {definition}
+        </dd>
+      </dl>
+    );
 }
 export default NotFound;
