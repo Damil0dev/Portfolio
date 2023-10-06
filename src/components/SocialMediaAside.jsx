@@ -6,9 +6,8 @@ import whatsappIcon from '../assets/socialmedia/whatsapp.png';
 import whatsappIcon_dark from '../assets/socialmedia/whatsapp (1).png';
 import instagramIcon from '../assets/socialmedia/instagram.png';
 import instagramIcon_dark from '../assets/socialmedia/instagram (1).png';
-import { useEffect } from 'react';
 
-export function SocialMediaAside({ isDark, setIsDark }) {
+export function SocialMediaAside({ isDark }) {
     console.log("LinkedIn Icon:", isDark ? linkedinIcon_dark : linkedinIcon);
 
     return (

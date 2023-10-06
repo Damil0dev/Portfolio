@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import sunIcon from "../assets/sun.svg"
 import moonIcon from "../assets/moon.svg"
 

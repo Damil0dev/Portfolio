@@ -20,19 +20,33 @@ function Projects() {
 
 function Project({image, alt, title, description, typeOfProject, url}) {
     return (
-        <div className="w-full md:w-1/4 flex flex-col rounded-md border-2 border-gray-200 shadow-md cursor-pointer hover:shadow-2xl transition-shadow" onClick={() => window.open(url, "_blank")}>
-            <div className="w-full h-2/4 flex justify-center items-center border-b-2 rounded-t-md">
-                <img src={image} alt={alt} className="my-3" width={100} height={100} />
-            </div>
-
-            <div className="px-2 py-3">
-                <h3 className="text-xl text-blue-800 font-bold">{title} <span className="text-sm text-neutral-500 font-semibold">{typeOfProject}</span></h3>
-                <p className="text-lg font-semibold dark:text-neutral-200">{description}</p>
-            </div>
-
-
+      <div
+        className='w-full md:w-1/4 flex flex-col bg-white dark:bg-neutral-700 rounded-lg active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'
+        onClick={() => window.open(url, "_blank")}
+      >
+        <div className='w-full h-2/4 flex justify-center items-center rounded-t-md'>
+          <img
+            src={image}
+            alt={alt}
+            className='my-3'
+            width={100}
+            height={100}
+          />
         </div>
-    )
+
+        <div className='px-2 py-3'>
+          <h3 className='text-xl text-blue-800 dark:text-blue-600 font-bold'>
+            {title}{" "}
+            <span className='text-sm text-neutral-500 dark:text-neutral-400 font-semibold'>
+              {typeOfProject}
+            </span>
+          </h3>
+          <p className='text-lg font-semibold dark:text-neutral-200'>
+            {description}
+          </p>
+        </div>
+      </div>
+    );
 }
 
 export default Projects;

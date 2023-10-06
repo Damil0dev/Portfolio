@@ -18,11 +18,11 @@ function Form() {
         <form action="https://formspree.io/f/xzblkdga" method="POST" className="w-full flex flex-col gap-5">
             <h2 className="text-3xl font-bold dark:text-neutral-200">Message me</h2>
             <div className="flex gap-3">
-                <input type="text" name="name" id="name" placeholder="Name" required className="w-1/2 py-2 px-4 rounded-lg text-white" />
-                <input type="email" name="email" id="email" placeholder="Email" required className="w-1/2 py-2 px-4 rounded-lg text-white" />
+                <input type="text" name="name" id="name" placeholder="Name" required className="w-1/2 py-2 px-4 rounded-lg text-white bg-white dark:bg-neutral-700" />
+                <input type="email" name="email" id="email" placeholder="Email" required className="w-1/2 py-2 px-4 rounded-lg text-white bg-white dark:bg-neutral-700" />
             </div>
-            <input type="text" name="" id="" placeholder="Subject" required className="py-2 px-4 rounded-lg text-white" />
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" className="py-2 px-4 rounded-lg text-white"></textarea>
+            <input type="text" name="" id="" placeholder="Subject" required className="py-2 px-4 rounded-lg text-white bg-white dark:bg-neutral-700" />
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" className="py-2 px-4 rounded-lg text-white bg-white dark:bg-neutral-700"></textarea>
             <button type="submit" className="py-2 font-semibold text-white bg-blue-800">Send</button>
         </form>
     )

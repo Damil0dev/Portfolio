@@ -67,7 +67,7 @@ function Certificados() {
 
 function Certificado({ src, alt, title }) {
   return (
-    <div className='md:w-1/5 bg-white dark:bg-neutral-600 rounded-lg active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'>
+    <div className='md:w-1/5 bg-white dark:bg-neutral-700 rounded-lg active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'>
       <img src={src} alt={alt} className='w-full rounded-t-lg' />
       <h3 className='p-2 text-xl dark:text-neutral-200 font-medium'>{title}</h3>
     </div>
