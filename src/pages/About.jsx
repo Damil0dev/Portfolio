@@ -4,7 +4,7 @@ import certificado3 from "../assets/certificados/certificado3.jpg";
 
 function About() {
   return (
-    <div className='w-full h-screen flex flex-col justify-center items-center'>
+    <div className='w-full h-screen flex flex-col justify-center items-center gap-5'>
       <div className='max-w-xl flex flex-col gap-5 px-5'>
         <Title />
         <Text />
@@ -40,7 +40,7 @@ function Text() {
 
 function Certificados() {
   return (
-    <div className='flex flex-col gap-5 p-5'>
+    <div className='flex flex-col md:flex-row md:justify-center gap-5 p-5'>
       <Certificado
         src={certificado1}
         alt='Digital Marketing certificate'
@@ -62,9 +62,9 @@ function Certificados() {
 
 function Certificado({ src, alt, title }) {
   return (
-    <div className=' bg-blue-800 rounded-md active:opacity-75'>
+    <div className='md:w-1/5 bg-blue-800 rounded-md active:opacity-75 hover:scale-110 hover:cursor-pointer transition-all'>
       <img src={src} alt={alt} className='w-full rounded-t-md' />
-      <h3 className='p-2 text-xl text-white font-medium'>{title}</h3>
+      <h3 className='p-2 text-xl text-white font-medium selection:bg-white selection:text-neutral-700'>{title}</h3>
     </div>
   );
 }
