@@ -4,7 +4,7 @@ import certificado3 from "../assets/certificados/certificado3.jpg";
 
 function About() {
   return (
-    <div className='w-full h-screen flex flex-col justify-center items-center gap-5'>
+    <div className='w-full flex flex-col justify-center items-center gap-5 py-20 dark:bg-neutral-800'>
       <div className='max-w-xl flex flex-col gap-5 px-5'>
         <Title />
         <Text />
