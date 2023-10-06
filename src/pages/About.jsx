@@ -9,7 +9,10 @@ function About() {
         <Title />
         <Text />
       </div>
-      <Certificados />
+      <div>
+        <h2 className="p-3 text-4xl text-neutral-800 text-center font-semibold">Certificates</h2>
+        <Certificados />
+      </div>
     </div>
   );
 }
@@ -62,7 +65,7 @@ function Certificados() {
 
 function Certificado({ src, alt, title }) {
   return (
-    <div className='md:w-1/5 bg-blue-800 rounded-md active:opacity-75 hover:scale-110 hover:cursor-pointer transition-all'>
+    <div className='md:w-1/5 bg-blue-800 rounded-md active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'>
       <img src={src} alt={alt} className='w-full rounded-t-md' />
       <h3 className='p-2 text-xl text-white font-medium selection:bg-white selection:text-neutral-700'>{title}</h3>
     </div>
