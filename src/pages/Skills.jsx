@@ -12,7 +12,7 @@ import certificado3 from "../assets/certificados/certificado3.jpg";
 
 function Skills() {
   return (
-    <div className='w-full h-fit flex flex-col items-center gap-5 py-20 px-5 dark:bg-neutral-800'>
+    <div className='w-full h-fit flex flex-col items-center gap-5 py-20 md:pb-0 px-5 dark:bg-neutral-800'>
       <h2 className='w-fit text-4xl text-neutral-800 dark:text-neutral-200 border-b-4 border-blue-800 text-center font-semibold'>
         Technologies
       </h2>
