@@ -113,26 +113,33 @@ function Certificados() {
         src={certificado1}
         alt='Digital Marketing certificate'
         title='Digital Marketing'
+        link='https://academia.comunidadreparando.com/certificates/marketing/?course_id=40&cert-nonce=b0476b42c5'
       />
       <Certificado
         src={certificado2}
         alt='Computer Systems Technician certificate'
         title='Computer Systems Technician'
+        link='https://capacitateparaelempleo.org/verifica/8a18da4c-3aed-4a87-a84b-aedfcd8b5643/d7b0d7a4-fd94-4e0f-b904-028e6deba692'
       />
       <Certificado
         src={certificado3}
         alt='META Front-End Developer certificate'
         title='META Front-End Developer'
+        link='https://coursera.org/share/1c24be7b334617fc2cb4e1e0fc685c05'
       />
     </div>
   );
 }
 
-function Certificado({ src, alt, title }) {
+function Certificado({ src, alt, title, link }) {
   return (
     <div className='md:w-1/5 bg-white dark:bg-neutral-700 rounded-lg active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'>
-      <img src={src} alt={alt} className='w-full rounded-t-lg' />
-      <h3 className='p-2 text-xl dark:text-neutral-200 font-medium'>{title}</h3>
+      <a href={link} target='_blank' rel='noopener noreferrer'>
+        <img src={src} alt={alt} className='w-full rounded-t-lg' />
+        <h3 className='p-2 text-xl dark:text-neutral-200 font-medium'>
+          {title}
+        </h3>
+      </a>
     </div>
   );
 }
