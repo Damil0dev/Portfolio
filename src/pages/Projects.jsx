@@ -16,20 +16,20 @@ function Projects() {
 function Project({ image, alt, title, description, typeOfProject, url }) {
   return (
     <div
-      className='w-full md:w-1/4 flex flex-col bg-white dark:bg-neutral-700 rounded-lg active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'
+      className='w-full md:w-1/4 flex flex-col bg-neutral-50 dark:bg-neutral-700 rounded-lg active:opacity-25 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'
       onClick={() => window.open(url, "_blank")}
     >
       <div className='w-full h-2/4 flex justify-center items-center rounded-t-md'>
         <img
           src={image}
           alt={alt}
-          className='my-3'
+          className='p-5'
           width={100}
           height={100}
         />
       </div>
 
-      <div className='px-2 py-3'>
+      <div className='flex flex-col px-5 pb-4'>
         <h3 className='text-xl text-blue-800 dark:text-blue-600 font-bold'>
           {title}{" "}
           <span className='text-sm text-neutral-500 dark:text-neutral-400 font-semibold'>
