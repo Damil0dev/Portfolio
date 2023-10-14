@@ -7,7 +7,6 @@ import reactIcon from "../assets/react.svg";
 import tauriIcon from "../assets/tauri.png";
 import vitejsIcon from "../assets/vitejs.svg";
 import pwaIcon from "../assets/pwa.svg";
-import certificado1 from "../assets/certificados/certificado1.jpg";
 import certificado2 from "../assets/certificados/certificado2.jpg";
 import certificado3 from "../assets/certificados/certificado3.jpg";
 
@@ -110,12 +109,6 @@ function SkillBar({ icon, alt, percentaje, firstBarHeight, secondBarHeight }) {
 function Certificados() {
   return (
     <div className='flex flex-col md:flex-row md:justify-center gap-5'>
-      <Certificado
-        src={certificado1}
-        alt='Digital Marketing certificate'
-        title='Digital Marketing'
-        link='https://academia.comunidadreparando.com/certificates/marketing/?course_id=40&cert-nonce=b0476b42c5'
-      />
       <Certificado
         src={certificado2}
         alt='Computer Systems Technician certificate'
