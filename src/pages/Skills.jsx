@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import htmlIcon from "../assets/html.svg";
 import cssIcon from "../assets/css-3.svg";
 import jsIcon from "../assets/js.svg";

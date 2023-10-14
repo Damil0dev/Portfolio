@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function NotFound() {
     return (
         <div className="w-full h-screen flex flex-col md:flex-row justify-center items-center px-4">

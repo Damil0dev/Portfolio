@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import multiConvertIcon from "../assets/multiconvert-icon.png"
 import rickandmortyIcon from "../assets/rickandmorty-icon.png"
 import RPSIcon from "../assets/rock, paper, scissors-icon.svg"
