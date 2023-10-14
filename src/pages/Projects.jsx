@@ -16,7 +16,7 @@ function Projects() {
 function Project({ image, alt, title, description, typeOfProject, url }) {
   return (
     <div
-      className='w-full md:w-1/4 flex flex-col bg-neutral-50 dark:bg-neutral-700 rounded-lg active:opacity-25 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'
+      className='w-full md:w-1/4 flex flex-col bg-neutral-50 dark:bg-neutral-700 rounded-lg active:opacity-25 md:hover:scale-110 md:hover:cursor-pointer md:transition-all shadow'
       onClick={() => window.open(url, "_blank")}
     >
       <div className='w-full h-2/4 flex justify-center items-center rounded-t-md'>

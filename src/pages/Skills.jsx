@@ -30,7 +30,7 @@ function Skills() {
 
 function SkillsSection() {
   return (
-    <div className='min-h-screen md:h-96 md:min-h-0 px-3 flex flex-row flex-wrap justify-center gap-5 md:gap-8 bg-white dark:bg-neutral-700 rounded-lg shadow-lg'>
+    <div className='min-h-screen md:h-96 md:min-h-0 px-3 flex flex-row flex-wrap justify-center gap-5 md:gap-8 bg-neutral-50 dark:bg-neutral-700 rounded-lg shadow'>
       <SkillBar
         icon={htmlIcon}
         alt='excellent level with html'
@@ -127,7 +127,7 @@ function Certificados() {
 
 function Certificado({ src, alt, title, link }) {
   return (
-    <div className='md:w-1/5 bg-white dark:bg-neutral-700 rounded-lg active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all'>
+    <div className='md:w-1/5 bg-neutral-50 dark:bg-neutral-700 rounded-lg active:opacity-75 md:hover:scale-110 md:hover:cursor-pointer md:transition-all shadow'>
       <a href={link} target='_blank' rel='noopener noreferrer'>
         <img src={src} alt={alt} className='w-full rounded-t-lg' />
         <h3 className='p-2 text-xl dark:text-neutral-200 font-medium'>
